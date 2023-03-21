@@ -1,4 +1,5 @@
 # INSTALLING AND TESTING THE HITECH-C COMPILER FOR CP/M ON GenieIIIs Computer
+
 Our objective is to run the updated C compiler on real Genie III or sdltrs emulator. Next step would be to build a cross compiler on Windows with Visual Studio.
 
 **NOTE:**  updates and enhancements to the HI-TECH C Compiler for Z80 v3.09 running are available on from this site:
@@ -9,9 +10,16 @@ The dist folder contains the entire compiler including the original distributed 
 The cpm, gen, float and stdio folders contain the library source-code that has been extracted from the .HUF archive files using DEHUFF.COM and the updated/modified files. The doc folder contains the documentation in ASCII text as HTCZ80.TXT.
 
 ## Installing the patched & updated HITECH-C compile r##
-Download htc-bin.lbr from the git repo, and transfer to CP/M 3 machine or emulator
-The lbr format can be upacked with `NULU.COM` or `LBREXT.COM`
-Run e.g. p:lbrext c9:htc-bin.lbr c9: (change the drive letter/user as they apply to your system)
+Download htc-bin.lbr from the git repo, and transfer to CP/M 3 machine or emulator.
+
+The lbr format can be upacked with `NULU.COM` or `LBREXT.COM
+`
+Run e.g. `p:lbrext c9:htc-bin.lbr c9:`(change the drive letter/user as they apply to your system)
+
 Download `testtrig.c` from the repo
+
 `c309.com` is the patched and updated compiler for 8-bit system
-Compile using `c309 -o -lf testtrig.c` 
+
+Compile using `c309 -o -lf testtrig.c`and run `testtrig.com`
+
+
