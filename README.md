@@ -12,7 +12,9 @@ The cpm, gen, float and stdio folders contain the library source-code that has b
 ## Installing the patched & updated HITECH-C compiler
 Download htc-bin.lbr from the git repo, and transfer to CP/M 3 machine or emulator.
 
-The lbr format can be upacked with `NULU.COM` or `LBREXT.COM and run e.g. `p:lbrext c9:htc-bin.lbr c9:`(change the drive letter/user as they apply to your system)
+The lbr format can be upacked with `NULU.COM` or `LBREXT.COM`
+
+Run e.g. `p:lbrext c9:htc-bin.lbr c9:` - (change the drive letter/user as they apply to your system)
 
 Download `testtrig.c` from the repo
 
