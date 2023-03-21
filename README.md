@@ -9,7 +9,7 @@ The HI-TECH Z80 CP/M C compiler v3.09 is provided free of charge for any use, pr
 The dist folder contains the entire compiler including the original distributed library source-code in Huffman-encoded archive files (CPM.HUF, GEN.HUF, FLOAT.HUF and STDIO.HUF). NB: I have not rebuilt the .HUF files - so please use updated run-time library source files in the following folders.
 The cpm, gen, float and stdio folders contain the library source-code that has been extracted from the .HUF archive files using DEHUFF.COM and the updated/modified files. The doc folder contains the documentation in ASCII text as HTCZ80.TXT.
 
-## Installing the patched & updated HITECH-C compile r##
+## Installing the patched & updated HITECH-C compiler
 Download htc-bin.lbr from the git repo, and transfer to CP/M 3 machine or emulator.
 
 The lbr format can be upacked with `NULU.COM` or `LBREXT.COM
