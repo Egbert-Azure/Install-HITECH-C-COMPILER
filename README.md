@@ -33,3 +33,26 @@ Add a file `ENVIRON.` in your Hitech user area and your working area:
 
 ![Screenshot 2023-03-21 201502](https://user-images.githubusercontent.com/55332675/226793998-eac932a1-6a7e-47b3-a807-ea05b31090a8.jpg)
 
+## Z3plus
+To run Hitech-C compiler within `Z3PLUS` you need to switch to z3plus small and can run commands like:
+
+ALIASES to make it easier to access the HI-TECH-C Compiler located in C9:HITECH. The sources of the C-programs are supposed to be located in another user area, namely in C11:CSOUR. Before LIBC.LIB, HOLTE.LIB for Genie IIIs is searched. The parameter -lz is used to include LIBZ.LIB!
+
+Where cc initiates a normal compiler run and ccf is intended for programs with floating-point numbers."
+
+CN z3plus small;C9:C -i9:c: $1.c 9:c:libc.lib $-1 -lz;z3plus
+
+CC z3plus small;C9:C -i9:c: $1.c 9:c:holte.lib $-1 -lz;z3plus
+
+CCF z3plus small;C9:C -i9:c: $1.c 9:c:holte.lib $-1 -lf -lz;z3plus
+
+
+Search for expression
+
+grep c9:grep $*
+
+Start C-PreCompiler for syntax-check
+
+pre hitech:pcc $*
+
+
