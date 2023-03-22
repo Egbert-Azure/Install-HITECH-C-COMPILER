@@ -1,6 +1,6 @@
 # INSTALLING THE UPDATED HITECH-C COMPILER FOR CP/M ON GenieIIIs Computer
 
-Our objective is to run the updated C compiler on real Genie III or sdltrs emulator. Next step would be to build a cross compiler on Windows with Visual Studio.
+Our objective is to run the updated C compiler on real Genie IIIs or sdltrs emulator. Next step would be to build a cross compiler on Windows with Visual Studio.
 
 **NOTE:**  updates and enhancements to the HI-TECH C Compiler for Z80 v3.09 running are available on from this site:
 <https://github.com/agn453/HI-TECH-Z80-C>
