@@ -71,3 +71,14 @@ pre hitech:pcc $*
 (WIP)
 
 Implement Hi-Tech Cross compiler for Windows with Visual Studio
+
+** DRAFT NOTES:** 
+
+zxcc uses three directories:
+     * BINDIR80 (by default, /usr/local/lib/cpm/bin80) holds the compiler
+       itself. You should copy the compiler .com files (or MAC, RMAC etc.)
+       and bios.bin to this directory.
+     * LIBDIR80 (by default, /usr/local/lib/cpm/lib80) holds the C
+       libraries libc.lib, libf.lib, crtcpm.obj and rrtcpm.obj.
+     * INCDIR80 (by default, /usr/local/lib/cpm/include80) holds the
+       compiler .h files.
