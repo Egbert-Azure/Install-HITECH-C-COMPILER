@@ -18,10 +18,10 @@ The lbr format can be upacked with `NULU.COM` or `LBREXT.COM`
 
 Run e.g. `p:lbrext c9:htc-bin.lbr c9:` - (change the drive letter/user as they apply to your system)
 
-Download `testtrig.c` from the repo
+Download `testtrig.c` from the repo or here.
 
 `c309.com` is the patched and updated compiler for 8-bit system
 
 Compile using `c309 -o -lf testtrig.c`and run `testtrig.com`
 
-
+![Screenshot 2023-03-21 201501](https://user-images.githubusercontent.com/55332675/226792943-b155e17f-1d28-4ed8-b40a-50a34d8d68ac.jpg)
