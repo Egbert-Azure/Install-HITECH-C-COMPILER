@@ -74,6 +74,8 @@ Implement Hi-Tech Cross compiler for Windows with Visual Studio
 
 ** DRAFT NOTES: ** 
 
+https://raw.githubusercontent.com/agn453/ZXCC/main/winbuild/README.md
+
 zxcc uses three directories:
 
      * BINDIR80 (by default, /usr/local/lib/cpm/bin80) holds the compiler
