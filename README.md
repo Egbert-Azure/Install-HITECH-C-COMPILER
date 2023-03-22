@@ -87,4 +87,7 @@ zxcc uses three directories:
        
      * INCDIR80 (by default, /usr/local/lib/cpm/include80) holds the
        compiler .h files.
+     
+     * The locations of these directories are normally set by the configure script;
+       you can override them by editing zxcc.h and uncommenting the lines that redefine them.
     
