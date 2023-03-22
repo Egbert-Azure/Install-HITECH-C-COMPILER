@@ -24,4 +24,3 @@ Download `testtrig.c` from the repo
 
 Compile using `c309 -o -lf testtrig.c`and run `testtrig.com`
 
-
