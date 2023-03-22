@@ -34,7 +34,7 @@ Add a file `ENVIRON.` in your Hitech user area and your working area:
 ![Screenshot 2023-03-21 201502](https://user-images.githubusercontent.com/55332675/226793998-eac932a1-6a7e-47b3-a807-ea05b31090a8.jpg)
 
 ## Z3PLUS
-To run Hitech-C compiler within `Z3PLUS` you need to switch to z3plus small and can run commands like:
+To run Hitech-C compiler within `Z3PLUS` you need to switch to `z3plus small` and then run commands like:
 
 `alias.cmd`:
 
