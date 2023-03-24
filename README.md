@@ -111,6 +111,18 @@ Create and set the environment variable `CPMDIR80`via the control panel. That wa
 {CPMDIR80}\include80
 ```
 
+Once you have installed `zxc` and the build tools, try building HelloWorld:
+
+``` c
+#include <stdio.h>
+  void main()
+     {
+     printf("Hello World\n");
+     }
+```
+
+Then compile and run it.
+
 ![image](https://user-images.githubusercontent.com/55332675/227382323-a97b2943-031d-4a71-9272-fd52d08bd218.png)
 
 
