@@ -103,12 +103,13 @@ Mark created a simplified option to set `CPMDIR80` to point to the `zxc` binary 
 
 Create and set the environment variable `CPMDIR80`via the control panel. That way, it will also point to the subdirectories:
 
+``` console
 {CPMDIR80}\bin80
 
 {CPMDIR80}\lib80
 
 {CPMDIR80}\include80
-
+```
 
 ![image](https://user-images.githubusercontent.com/55332675/227382323-a97b2943-031d-4a71-9272-fd52d08bd218.png)
 
