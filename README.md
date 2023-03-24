@@ -68,15 +68,21 @@ pre hitech:pcc $*
 
 ## Creating a cross compiler for Windows
 
-(WIP)
+Implement Hi-Tech Cross compiler for Windows with Visual Studio.
+To compile and also run Z80 CP/M programs with Windows Mark Ogden's "one click" solution to install `zxc`is highly recommended.
 
-Implement Hi-Tech Cross compiler for Windows with Visual Studio
-
-** DRAFT NOTES: ** 
-
+Details can be found here
 https://raw.githubusercontent.com/agn453/ZXCC/main/winbuild/README.md
 
-zxcc uses three directories:
+1.	If you don’t already have visual studio installed, install the community edition, which is free from Microsoft.
+2.	Clone the repository `zxcc` repository from github into an area of your choice.
+3.	Modify the `install.cfg` script in the winbuild sub directory to reflect where you want the final files to be installed, the sample file has the install path as `d:\bin`, change to match your local requirements
+4.	Open the solution file `wzxcc.sln` file in the winbuild directory with `Visual Studio` or `Visual Studio Cod`e and build the solution you want. X64 Release is default, if you are running on a 32bit version of Windows you need to switch to X32.
+![image](https://user-images.githubusercontent.com/55332675/227419477-6e783754-d7ef-4dea-87a9-66f4f756df7f.png)
+
+5.	Install the hitech C compiler from the github website  https://github.com/agn453/HI-TECH-Z80-C on your Z80 system (in my case the Geniee IIIs) and copy the needed files also to the Windows `zx`c subdirectories.
+
+`zxcc` uses three directories:
 
      * BINDIR80 (by default, ...\bin80) holds the compiler
        itself. You should copy the compiler .com files (or MAC, RMAC etc.)
@@ -87,10 +93,21 @@ zxcc uses three directories:
        
      * INCDIR80 (by default, ... \include80) holds the
        compiler .h files.
-     
+       
+Copy the necessary files into the directory. For the Genie IIIs with Holte CP/M, copy `HOLTE.LIB` into `bin80` too.
+    
      * Only the location for zxc is set by the configure script under Windows;
        you can override them by editing zxcc.h and uncommenting the lines that redefine them and re-compile
-    
+
+Mark created a simplified option to set `CPMDIR80` to point to the `zxc` binary directory, but you need to create the subdirectories `bin80`, `lib80` and `include80`.
+
+Create and set the environment variable `CPMDIR80`via the control panel. That way, it will also point to the subdirectories:
+
+{CPMDIR80}\bin80
+
+{CPMDIR80}\lib80
+
+{CPMDIR80}\include80
 
 
 ![image](https://user-images.githubusercontent.com/55332675/227382323-a97b2943-031d-4a71-9272-fd52d08bd218.png)
