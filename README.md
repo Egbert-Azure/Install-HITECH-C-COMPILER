@@ -89,8 +89,9 @@ zxcc uses three directories:
        compiler .h files.
      
      * Only the location for zxc is set by the configure script under Windows;
-       you can override them by editing zxcc.h and uncommenting the lines that redefine them.
+       you can override them by editing zxcc.h and uncommenting the lines that redefine them and re-compile
     
+
 
 ![image](https://user-images.githubusercontent.com/55332675/227382323-a97b2943-031d-4a71-9272-fd52d08bd218.png)
 
