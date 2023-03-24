@@ -80,7 +80,7 @@ https://raw.githubusercontent.com/agn453/ZXCC/main/winbuild/README.md
 4.	Open the solution file `wzxcc.sln` file in the winbuild directory with `Visual Studio` or `Visual Studio Cod`e and build the solution you want. X64 Release is default, if you are running on a 32bit version of Windows you need to switch to X32.
 ![image](https://user-images.githubusercontent.com/55332675/227419477-6e783754-d7ef-4dea-87a9-66f4f756df7f.png)
 
-5.	Install the hitech C compiler from the github website  https://github.com/agn453/HI-TECH-Z80-C on your Z80 system (in my case the Geniee IIIs) and copy the needed files also to the Windows `zx`c subdirectories.
+5.	Install the hitech C compiler from the github website  https://github.com/agn453/HI-TECH-Z80-C on your Z80 system (in my case the Genie IIIs) and copy the needed files also to the Windows `zx`c subdirectories.
 
 `zxcc` uses three directories:
 
