@@ -94,3 +94,5 @@ zxcc uses three directories:
 
 ![image](https://user-images.githubusercontent.com/55332675/227382323-a97b2943-031d-4a71-9272-fd52d08bd218.png)
 
+
+![image](https://user-images.githubusercontent.com/55332675/227391414-3cc54518-46ac-4773-9db1-b9a5c05e5844.png)
