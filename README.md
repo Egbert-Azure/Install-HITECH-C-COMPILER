@@ -78,17 +78,17 @@ https://raw.githubusercontent.com/agn453/ZXCC/main/winbuild/README.md
 
 zxcc uses three directories:
 
-     * BINDIR80 (by default, /usr/local/lib/cpm/bin80) holds the compiler
+     * BINDIR80 (by default, ...\bin80) holds the compiler
        itself. You should copy the compiler .com files (or MAC, RMAC etc.)
        and bios.bin to this directory.
        
-     * LIBDIR80 (by default, /usr/local/lib/cpm/lib80) holds the C
+     * LIBDIR80 (by default, ... \lib80) holds the C
        libraries libc.lib, libf.lib, crtcpm.obj and rrtcpm.obj.
        
-     * INCDIR80 (by default, /usr/local/lib/cpm/include80) holds the
+     * INCDIR80 (by default, ... \include80) holds the
        compiler .h files.
      
-     * The locations of these directories are normally set by the configure script;
+     * Only the location for zxc is set by the configure script under Windows;
        you can override them by editing zxcc.h and uncommenting the lines that redefine them.
     
 
