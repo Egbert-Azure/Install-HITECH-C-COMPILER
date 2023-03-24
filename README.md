@@ -125,5 +125,18 @@ Then compile and run it.
 
 ![image](https://user-images.githubusercontent.com/55332675/227382323-a97b2943-031d-4a71-9272-fd52d08bd218.png)
 
+You are good to go. After creating and filling the cross-compiler directories and defining the INCDIR80, LIBDIR80 and PATH environment variables, you can compile your source programs in any current directory using the `zc3` control program with the necessary options and a list of processed programs.
+
 
 ![image](https://user-images.githubusercontent.com/55332675/227391414-3cc54518-46ac-4773-9db1-b9a5c05e5844.png)
+
+## Acknowledgments ##
+Thank you to HI-TECH SOFTWARE for writing the Hi-Tech C v3.09 compiler for CP/M and allowing free use of it.
+
+Thanks to John Elliott for writing the zxcc emulator.
+
+Thanks to Mark Ogden for his amazing work to create a simplified solution for Windows cross compiler.
+
+I'm thankful to all the unnamed people who cared enough to restore and preserve information about this wonderful compiler and the CP/M operating system.
+
+I apologize if I forgot to mention anyone.
