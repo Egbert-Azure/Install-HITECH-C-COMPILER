@@ -72,32 +72,29 @@ Implement Hi-Tech Cross compiler for Windows with Visual Studio.
 To compile and also run Z80 CP/M programs with Windows Mark Ogden's "one click" solution to install `zxc`is highly recommended.
 
 Details can be found here
-https://raw.githubusercontent.com/agn453/ZXCC/main/winbuild/README.md
+<https://raw.githubusercontent.com/agn453/ZXCC/main/winbuild/README.md>
 
-1.	If you don’t already have visual studio installed, install the community edition, which is free from Microsoft.
-2.	Clone the repository `zxcc` repository from github into an area of your choice.
-3.	Modify the `install.cfg` script in the winbuild sub directory to reflect where you want the final files to be installed, the sample file has the install path as `d:\bin`, change to match your local requirements
-4.	Open the solution file `wzxcc.sln` file in the winbuild directory with `Visual Studio` or `Visual Studio Cod`e and build the solution you want. X64 Release is default, if you are running on a 32bit version of Windows you need to switch to X32.
+1. If you don’t already have visual studio installed, install the community edition, which is free from Microsoft.
+2. Clone the repository `zxcc` repository from github into an area of your choice.
+3. Modify the `install.cfg` script in the winbuild sub directory to reflect where you want the final files to be installed, the sample file has the install path as `d:\bin`, change to match your local requirements
+4. Open the solution file `wzxcc.sln` file in the winbuild directory with `Visual Studio` or `Visual Studio Cod`e and build the solution you want. X64 Release is default, if you are running on a 32bit version of Windows you need to switch to X32.
 ![image](https://user-images.githubusercontent.com/55332675/227419477-6e783754-d7ef-4dea-87a9-66f4f756df7f.png)
 
-5.	Install the hitech C compiler from the github website  https://github.com/agn453/HI-TECH-Z80-C on your Z80 system (in my case the Genie IIIs) and copy the needed files also to the Windows `zx`c subdirectories.
+5. Install the hitech C compiler from the github website  <https://github.com/agn453/HI-TECH-Z80-C> on your Z80 system (in my case the Genie IIIs) and copy the needed files also to the Windows `zx`c subdirectories.
 
 `zxcc` uses three directories:
 
-     * BINDIR80 (by default, ...\bin80) holds the compiler
-       itself. You should copy the compiler .com files (or MAC, RMAC etc.)
+* `BINDIR80` (by default, ...\bin80) holds the compiler itself.
+       You should copy the compiler .com files (or MAC, RMAC etc.)
        and bios.bin to this directory.
-       
-     * LIBDIR80 (by default, ... \lib80) holds the C
+* `LIBDIR80` (by default, ... \lib80) holds the C
        libraries libc.lib, libf.lib, crtcpm.obj and rrtcpm.obj.
-       
-     * INCDIR80 (by default, ... \include80) holds the
+* `INCDIR80` (by default, ... \include80) holds the
        compiler .h files.
-       
+
 Copy the necessary files into the directory. For the Genie IIIs with Holte CP/M, copy `HOLTE.LIB` into `bin80` too.
-    
-     * Only the location for zxc is set by the configure script under Windows;
-       you can override them by editing zxcc.h and uncommenting the lines that redefine them and re-compile
+
+>Only the location for zxc is set by the configure script under Windows; you can override them by editing zxcc.h and uncommenting the lines that redefine them and re-compile.
 
 Mark created a simplified option to set `CPMDIR80` to point to the `zxc` binary directory, but you need to create the subdirectories `bin80`, `lib80` and `include80`.
 
@@ -111,7 +108,7 @@ Create and set the environment variable `CPMDIR80`via the control panel. That wa
 {CPMDIR80}\include80
 ```
 
-Once you have installed `zxc` and the build tools, try building HelloWorld:
+Once you have installed `zxc` and the build tools, try building HelloWorld opening a terminal within Visual Studio:
 
 ``` c
 #include <stdio.h>
@@ -127,10 +124,46 @@ Then compile and run it.
 
 You are good to go. After creating and filling the cross-compiler directories and defining the INCDIR80, LIBDIR80 and PATH environment variables, you can compile your source programs in any current directory using the `zxc` control program with the necessary options and a list of processed programs.
 
-
 ![image](https://user-images.githubusercontent.com/55332675/227391414-3cc54518-46ac-4773-9db1-b9a5c05e5844.png)
 
+Within Visual Studio Code you should define `tasks.json`
+
+``` json
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C: zxc build active file",
+            "command": "zxc",
+            "args": [
+                "${file}",
+                "-lf"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+```
+
+And `settings.json` associated with the c file ending:
+
+``` json
+{
+    "files.associations": {
+        "*.c": "zxc"
+    }
+}
+```
+
+This should make it the default build task that runs when you press `Ctrl+Shift+B`.
+Default is `libz.lib` which needs to be changed depending on your project.
+
 ## Acknowledgments ##
+
 Thank you to HI-TECH SOFTWARE for writing the Hi-Tech C v3.09 compiler for CP/M and allowing free use of it.
 
 Thanks to John Elliott for writing the zxcc emulator.
