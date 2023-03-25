@@ -163,7 +163,7 @@ And `settings.json` associated with the c file ending:
 This should make it the default build task that runs when you press `Ctrl+Shift+B`.
 Default is `libz.lib` together with `holte.lib` for GenieIIIs CP/M, which needs to be changed depending on your project.
 
-## Acknowledgments ##
+## Acknowledgments
 
 Thank you to HI-TECH SOFTWARE for writing the Hi-Tech C v3.09 compiler for CP/M and allowing free use of it.
 
