@@ -2,16 +2,17 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "zxc compile",
             "type": "shell",
-            "command": "zxc ${file} -lf",
+            "label": "C/C++: zxc build active file",
+            "command": "zxc",
+            "args": [
+                "${file}",
+                "-lf",
+                "-lholte"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
             }
         }
     ]

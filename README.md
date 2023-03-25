@@ -134,11 +134,12 @@ Within Visual Studio Code you should define `tasks.json`
     "tasks": [
         {
             "type": "shell",
-            "label": "C: zxc build active file",
+            "label": "C/C+: zxc build active file",
             "command": "zxc",
             "args": [
                 "${file}",
-                "-lf"
+                "-lf",
+                "-lholte"
             ],
             "group": {
                 "kind": "build",
@@ -160,7 +161,7 @@ And `settings.json` associated with the c file ending:
 ```
 
 This should make it the default build task that runs when you press `Ctrl+Shift+B`.
-Default is `libz.lib` which needs to be changed depending on your project.
+Default is `libz.lib` together with `holte.lib` for GenieIIIs CP/M, which needs to be changed depending on your project.
 
 ## Acknowledgments ##
 
