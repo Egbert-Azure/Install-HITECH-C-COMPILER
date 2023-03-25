@@ -1,5 +1,7 @@
 {
     "files.associations": {
         "*.c": "zxc"
-    }
+    },
+    "workspaceFolder": "${workspaceFolder}/Install-HITECH-C-COMPILER"
 }
+
