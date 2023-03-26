@@ -174,3 +174,8 @@ Thanks to Mark Ogden for his amazing work to create a simplified solution for Wi
 I'm thankful to all the unnamed people who cared enough to restore and preserve information about this wonderful compiler and the CP/M operating system.
 
 I apologize if I forgot to mention anyone.
+
+
+## Drop a Star ⭐ ##
+
+If you like this project then drop a Github star by pressing the Star button ⭐
