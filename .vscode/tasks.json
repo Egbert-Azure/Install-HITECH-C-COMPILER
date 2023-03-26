@@ -3,7 +3,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "C/C++: zxc build active file",
+            "label": "C/C+: zxc build active file",
             "command": "zxc",
             "args": [
                 "${file}",
